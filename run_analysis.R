@@ -1,6 +1,5 @@
 
-library(readr)
-library(tidyr)
+
 library(dplyr)
 
 # We dowload the dataset from internet
@@ -57,5 +56,8 @@ tidydata <- final %>%
 
 colnames(tidydata)[4:69]<- betternames(colnames(tidydata)[4:69])
 
-write.table
+write.table(tidydata, "final.txt", row.names = FALSE)
+
+##read.table("final.txt", header= T)
+
 

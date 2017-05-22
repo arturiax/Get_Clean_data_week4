@@ -1,0 +1,53 @@
+---
+title: "CodeBook"
+output: html_document
+---
+
+## Variables in final.txt dataset
+
+The final dataset has 69 variables. The first 3 are:
+
+#### set_type
+Indicates if the observation is from the train or the test set.    
+Factor variable with two possible values:
+
+* train
+* test 
+
+#### subject
+Unique identifier of  study subjects.   
+Integer variable, range [1-30].  
+
+#### activity
+Type of activity.    
+Factor variable with 6 possible values:
+
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
+
+### Signal variables
+
+The remain 66 variables are the averages, by subject and activity, of variables in the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  
+We are not going to explain them one by one. However they are named in a self-explanatory way. Each variable name has 6 different components separated by "_":
+
+1. **Type of signal:** Could be a Body signal or a Gravity signal
+2. **Type of tool:** If the signal was recorded by the accelerometer ("acc") or by the gyroscope ("gyro").
+3. **Jerk signal:** If the signal was derived in time ("jerk") or not ("nojerk").
+4. **Type of axis:** The axis of the signal ("X"","Y"" or "Z""), or if the magnitude was calculated using the euclidean norm of the 3 signals ("mag").  
+5. **Fourier tansformation:** If a fast fourier transformation was applied to the signal ("f") or not ("t").
+6. **Type of statistic** Statictic used to calculate the original variable, mean ("mean") or standard deviation ("std"). 
+
+Example: `Gravity_acc_nojerk_Z_t_mean`
+
+### Complete list of variables:
+```{r, echo = F}
+colnames(read.table("final.txt", header= T))
+```
+
+
+
+
