@@ -1,6 +1,8 @@
 ---
 title: "CodeBook"
-output: html_document
+output: 
+   md_document:
+    variant: markdown_github
 ---
 
 ## Variables in final.txt dataset
