@@ -47,7 +47,7 @@ Example: `Gravity_acc_nojerk_Z_t_mean`
 
 ### Complete list of variables:
 ```{r, echo = F}
-colnames(read.table("final.txt", header= T))
+colnames(read.table("tidydata.txt", header= T))
 ```
 
 

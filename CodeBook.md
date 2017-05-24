@@ -1,5 +1,5 @@
-Variables in final.txt dataset
-------------------------------
+Variables in tidydata.txt dataset
+---------------------------------
 
 The final dataset has 69 variables. The first 3 are:
 
