@@ -34,13 +34,13 @@ ytrain$activity<-labels$V2[ytrain$V1]
 test <-
   xtest %>%  
   mutate(set_type = "test", subject = subtest$V1 , activity = ytest$activity) %>% 
-  select(set_type, subject, activity, 1:561)
+  select(set_type, subject, activity, 1:561) #We put the features variables at the end
 
 # We do the same for the train sets
 train <-
   xtrain %>%  
   mutate(set_type = "train", subject = subtrain$V1 , activity = ytrain$activity) %>% 
-  select(set_type, subject, activity, 1:561)
+  select(set_type, subject, activity, 1:561) #We put the features variables at the end
 
 #We merge the complete test and train sets
 final <- union(test, train)

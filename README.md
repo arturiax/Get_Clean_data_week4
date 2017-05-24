@@ -7,7 +7,7 @@ The purpose of this project is to demonstrate the ability to collect, work with,
 
 From the messy data of the [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) we need to construct a final tidy data set with the average of some variables for each activity and each subject.
 
-The code to get the final tidy data set is in `run_analysis.R`. The scrip has comments that explains all the process.
+The code to get the final tidy data set is in `run_analysis.R`. The scrip has comments that explains all the steps done.
 
 The `Codebook.md` file contains the descriptions of the variables.   
 
